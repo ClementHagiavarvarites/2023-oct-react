@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/2023-oct-react/static/css/main.964fdded.css",
+    "main.js": "/2023-oct-react/static/js/main.df9ae40d.js",
+    "index.html": "/2023-oct-react/index.html",
+    "main.964fdded.css.map": "/2023-oct-react/static/css/main.964fdded.css.map",
+    "main.df9ae40d.js.map": "/2023-oct-react/static/js/main.df9ae40d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.df9ae40d.js"
+  ]
+}
