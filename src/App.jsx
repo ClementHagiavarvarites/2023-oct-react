@@ -1,8 +1,25 @@
 import './App.css';
+import React, { useState } from 'react';
 import ParkingLotForm from './Components/ParkingLotForm/ParkingLotForm';
 import ParkingLotList from './Components/ParkingLotList/ParkingLotList';
 
 function App() {
+
+  const [parkingLotItems, setParkingLotItems] = useState([
+    {
+      date: "2023-06-27",
+      priority: "Low",
+      link: "https://google.com/",
+      description: "Ultimate source of truth.",
+    },
+    {
+      date: "2023-08-29",
+      priority: "Medium",
+      link: "https://react.dev/",
+      description: "React documentation and tutorial",
+    },
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +29,9 @@ function App() {
       <main>
         <ParkingLotForm />
         <ParkingLotList />
+        <pre>
+          { JSON.stringify(parkingLotItems) }
+        </pre>
       </main>
     </div>
   );
