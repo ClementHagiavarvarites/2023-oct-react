@@ -1,17 +1,27 @@
 import React from "react";
+import { Card, CardHeader, CardBody, CardTitle, CardText } from 'reactstrap';
 
 export default function ParkingLotItem({ id, link, description, date, priority }) {
+
     return (
-        <section className="parking-lot-item-container">
-            <p className="parking-lot-item-field">Date: { date }</p>
-            <p className="parking-lot-item-field">Priority: { priority }</p>
-            <p className="parking-lot-item-field">Description: { description }</p>
-            <p className="parking-lot-item-field">
+        <Card
+            className="my-2 parking-lot-item-container"
+            color="dark"
+            inverse>
+            <CardHeader>
+                { date } (Priority: { priority })
+            </CardHeader>
+            <CardBody>
+            <CardTitle tag="h5">
+                { description }
+            </CardTitle>
+            <CardText>
                 Link:&nbsp;
                 <a href={link} target="_blank" className="parking-lot-item-anchor">
-                    { link }
+                { link }
                 </a>
-            </p>
-        </section>
+            </CardText>
+            </CardBody>
+        </Card>
     );
 }

@@ -45,7 +45,7 @@ export default function ParkingLotForm({ addItem }) {
     
   return (
     <Form data-bs-theme="dark" className="parking-lot-form" onSubmit={handleSubmit}>
-      <FormGroup class="parking-lot-row">
+      <FormGroup className="parking-lot-row">
         <Label htmlFor="link-date">Date</Label>
         <Input
           id="link-date"
@@ -55,7 +55,7 @@ export default function ParkingLotForm({ addItem }) {
           onChange={handleDateChange}
           required />
       </FormGroup>
-      <FormGroup class="parking-lot-row">
+      <FormGroup className="parking-lot-row">
         <Label htmlFor="link-url">Link</Label>
         <Input
           id="link-url"
@@ -65,7 +65,7 @@ export default function ParkingLotForm({ addItem }) {
           onChange={handleLinkChange}
           required />
       </FormGroup>
-      <FormGroup class="parking-lot-row">
+      <FormGroup className="parking-lot-row">
         <Label htmlFor="link-description">Description</Label>
         <Input
           id="link-description"
@@ -75,7 +75,7 @@ export default function ParkingLotForm({ addItem }) {
           required
           name="description" />
       </FormGroup>
-      <FormGroup class="parking-lot-row">
+      <FormGroup className="parking-lot-row">
         <Input
           name="radio-priority"
           type="radio"
