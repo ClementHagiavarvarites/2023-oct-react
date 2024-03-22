@@ -1,7 +1,12 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Card, CardHeader, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 
-export default function ParkingLotItem({ id, link, description, date, priority }) {
+export default function ParkingLotItem({ id, link, description, date, priority, deleteItem }) {
+
+    function handleDelete(e) {
+        e.preventDefault();
+        deleteItem(id);
+    }
 
     return (
         <Card
@@ -10,6 +15,9 @@ export default function ParkingLotItem({ id, link, description, date, priority }
             inverse>
             <CardHeader>
                 { date } (Priority: { priority })
+                <Button color="danger" className="delete-button" onClick={handleDelete}>
+                    <strong>X</strong>
+                </Button>
             </CardHeader>
             <CardBody>
             <CardTitle tag="h5">
