@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import ParkingLotForm from './Components/ParkingLotForm/ParkingLotForm';
 import ParkingLotList from './Components/ParkingLotList/ParkingLotList';
+import Timer from './Components/Timer/Timer';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <header className="App-header">
         <h1>Browser Parking Lot</h1>
         <p>Send most of your browser tabs into retirement.</p>
+        <p><Timer /></p>
       </header>
       <main>
         <ParkingLotForm addItem={addItem}/>
