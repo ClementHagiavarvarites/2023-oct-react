@@ -14,15 +14,15 @@ The Browser Parking Lot enables you to eliminate tabs in your browser. Therefore
 ## User stories
 
 ```
-As a
-I want to
-So that I
+As a poet
+I want to make a list of things accessible through the internet: webpages, photos, videos, audios, software, and etc.
+So that I can fight writer's block.
 
-As a
-I want to
-So that I
+As a filmmaker
+I want to make a list of of leads, organized by credibility, as to the whereabouts of the lost city of Atlantis
+So that I can make an entertaining and lucrative mocumentary.
 
-As a
-I want to
-So that I
+As a Geologist
+I want to have convenient access to well logs
+So that I can research the Geology.
 ```
