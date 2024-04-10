@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardTitle, CardText, Button } from 'reactstrap';
+import './ParkingLotItem.css';
 
-export default function ParkingLotItem({ id, link, description, date, priority, deleteItem }) {
+export default function ParkingLotItem({ id, link, description, date, priority, deleteItem, theme }) {
 
     function handleDelete(e) {
         e.preventDefault();
@@ -9,9 +10,9 @@ export default function ParkingLotItem({ id, link, description, date, priority, 
     }
 
     return (
-        <Card
+        <div theme={theme}
             className="my-2 parking-lot-item-container"
-            color="dark"
+            color=""
             inverse>
             <CardHeader>
                 { date } (Priority: { priority })
@@ -30,6 +31,6 @@ export default function ParkingLotItem({ id, link, description, date, priority, 
                 </a>
             </CardText>
             </CardBody>
-        </Card>
+        </div>
     );
 }

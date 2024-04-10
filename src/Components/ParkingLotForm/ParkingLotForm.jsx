@@ -9,7 +9,7 @@ const PRIORITIES = {
   Low: 'Low'
 }
 
-export default function ParkingLotForm({ addItem }) {
+export default function ParkingLotForm({ addItem, theme }) {
 
     const [date, setDate] = useState('');
     const [link, setLink] = useState('');
@@ -44,7 +44,7 @@ export default function ParkingLotForm({ addItem }) {
     }
     
   return (
-    <Form data-bs-theme="dark" className="parking-lot-form" onSubmit={handleSubmit}>
+    <Form data-bs-theme={theme} className="parking-lot-form" onSubmit={handleSubmit}>
       <FormGroup className="parking-lot-row">
         <Label htmlFor="link-date">Date</Label>
         <Input
