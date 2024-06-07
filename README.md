@@ -1,5 +1,9 @@
 # Browser Parking Lot
 
+Hosting: https://clementhagiavarvarites.github.io/2023-oct-react/
+
+By: Clement (Zadyn) Kear
+
 The objective of this project is to store useful links with a todo item that can be prioritized using the labels HIGH, MEDIUM, LOW.
 
 An item contains:
@@ -11,7 +15,7 @@ An item contains:
 
 The Browser Parking Lot enables you to eliminate tabs in your browser. Therefore, we reduce memory consumption of your computer, because using the browser as a todo list is counterproductive.
 
-## User stories
+## User stories 
 
 ```
 As a poet
